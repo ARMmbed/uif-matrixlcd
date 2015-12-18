@@ -1,0 +1,19 @@
+{
+  "name": "uif-matrixlcd",
+  "version": "0.0.0",
+  "description": "UIFramework matrix LCD frame buffer laid out as a 1-bit black/white continuous array.",
+  "keywords": [],
+  "author": "Marcus Chang <marcus.chang@arm.com>",
+  "repository": {
+    "url": "git@github.com:ARMmbed/uif-matrixlcd.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/ARMmbed/uif-matrixlcd",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "targetDependencies": {
+    "matrixlcd-sharp": {
+      "uif-matrixlcd-sharp": "^3.0.0"
+    }
+  }
+}
