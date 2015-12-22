@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-#ifndef __UIF_MATRIXLCD_H__
-#define __UIF_MATRIXLCD_H__
+#ifndef __UIF_MATRIXLCD_BASE_H__
+#define __UIF_MATRIXLCD_BASE_H__
 
 #include "mbed-drivers/mbed.h"
-#include "uif-matrixlcd/MatrixLCDImplementation.h"
 
 #include "uif-framebuffer/FrameBuffer.h"
 
@@ -26,27 +25,17 @@ using namespace mbed::util;
 using namespace uif;
 
 namespace uif {
-    class MatrixLCD
+    class MatrixLCDBase
     {
     public:
-        MatrixLCD(SPI& spi, PinName cs, PinName disp, PinName extComIn)
-            : lcd(spi, cs, disp, extComIn)
-        {}
-
         // pointer to the first pixels
-        SharedPointer<FrameBuffer> getFrameBuffer()
-        {
-            return lcd.getFrameBuffer();
-        }
+        virtual SharedPointer<FrameBuffer> getFrameBuffer() = 0;
 
         // send the front buffer to the screen
-        void sendFrameBuffer(SharedPointer<FrameBuffer>& buffer, FunctionPointer onTransferBegin, FunctionPointer onTransferDone)
-        {
-            lcd.sendFrameBuffer(buffer, onTransferBegin, onTransferDone);
-        }
+        virtual void sendFrameBuffer(SharedPointer<FrameBuffer>& buffer, FunctionPointer onTransferBegin, FunctionPointer onTransferDone) = 0;
 
-    private:
-        MatrixLCDImplementation lcd;
+    protected:
+        MatrixLCDBase() { }
     };
 } // namespace uif
 

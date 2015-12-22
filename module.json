@@ -10,10 +10,12 @@
   },
   "homepage": "https://github.com/ARMmbed/uif-matrixlcd",
   "license": "Apache-2.0",
-  "dependencies": {},
+  "dependencies": {
+    "uif-framebuffer": "^1.0.0"
+  },
   "targetDependencies": {
     "matrixlcd-sharp": {
-      "uif-matrixlcd-sharp": "^3.0.0"
+      "uif-matrixlcd-sharp": "^4.0.0"
     }
   }
 }
