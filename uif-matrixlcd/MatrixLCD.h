@@ -29,12 +29,12 @@ namespace uif {
     class MatrixLCD
     {
     public:
-        MatrixLCD(SPI& spi, PinName cs, PinName disp, PinName extComIn)
-            : lcd(spi, cs, disp, extComIn)
+        MatrixLCD(void)
+            : lcd()
         {}
 
         // pointer to the first pixels
-        SharedPointer<FrameBuffer> getFrameBuffer()
+        SharedPointer<FrameBuffer> getFrameBuffer(void)
         {
             return lcd.getFrameBuffer();
         }
