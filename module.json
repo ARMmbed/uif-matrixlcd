@@ -1,7 +1,7 @@
 {
   "name": "uif-matrixlcd",
   "version": "2.0.0",
-  "description": "UIFramework matrix LCD frame buffer laid out as a 1-bit black/white continuous array.",
+  "description": "UIFramework matrix LCD frame buffer.",
   "keywords": [],
   "author": "Marcus Chang <marcus.chang@arm.com>",
   "repository": {
@@ -14,8 +14,11 @@
     "uif-framebuffer": "^1.0.0"
   },
   "targetDependencies": {
-    "matrixlcd-sharp": {
-      "uif-matrixlcd-sharp": "^4.0.0"
+    "matrixlcd-sharp-1bit": {
+      "uif-matrixlcd-sharp-1bit": "^6.0.0"
+    },
+    "matrixlcd-printf-1bit": {
+      "uif-matrixlcd-printf-1bit": "^1.0.0"
     }
   }
 }
