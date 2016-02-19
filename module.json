@@ -15,7 +15,7 @@
   },
   "targetDependencies": {
     "matrixlcd-sharp-1bit": {
-      "uif-matrixlcd-sharp-1bit": "^6.0.0"
+      "uif-matrixlcd-sharp-1bit": "^7.0.0"
     },
     "matrixlcd-printf-1bit": {
       "uif-matrixlcd-printf-1bit": "^1.0.0"
