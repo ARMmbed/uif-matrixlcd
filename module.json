@@ -1,6 +1,6 @@
 {
   "name": "uif-matrixlcd",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "UIFramework matrix LCD frame buffer.",
   "keywords": [],
   "author": "Marcus Chang <marcus.chang@arm.com>",
