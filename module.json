@@ -11,11 +11,14 @@
   "homepage": "https://github.com/ARMmbed/uif-matrixlcd",
   "license": "Apache-2.0",
   "dependencies": {
+    "mbed-drivers": "^1.0.0",
     "uif-framebuffer": "^1.0.0"
   },
   "targetDependencies": {
     "matrixlcd-sharp-1bit": {
-      "uif-matrixlcd-sharp-1bit": "^7.0.0"
+      "wrd-utilities": "^2.0.0",
+      "wrd-output-compare": "^3.0.0",
+      "uif-matrixlcd-sharp-1bit": "^8.0.0"
     },
     "matrixlcd-printf-1bit": {
       "uif-matrixlcd-printf-1bit": "^1.0.0"
