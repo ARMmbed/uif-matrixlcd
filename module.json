@@ -21,7 +21,7 @@
       "uif-matrixlcd-sharp-1bit": "^8.0.0"
     },
     "matrixlcd-printf-1bit": {
-      "uif-matrixlcd-printf-1bit": "^1.0.0"
+      "uif-matrixlcd-printf-1bit": "^2.0.0"
     }
   }
 }
